@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+ 
+
+<body style="font-family: Arial, sans-serif;
+             background-color: #f4f4f4;
+             color: #333;
+             padding: 20px;">
+    <div class="mainbox">
+        <h1>Frequently Ask Questions</h1>
+
+        <div>
+            <div class="box1">
+                <button class="button">
+                   <div  > What is an online advertisement?</div>
+                   <div style=" margin-right: 5%;" ><span class="icon">+</span></div></button>
+                <div class="content">
+                    <p>An online advertisement is a digital marketing message displayed
+                         on a website, app, or search engine results page to promote a product,
+                          service, or brand, aiming to reach potential customers.</p>
+                </div>
+            </div>
+            <br>
+
+            <div class="box1">
+                <button class="button">
+                    <div>What are the different types of online ads?</div>
+                    <div style=" margin-right: 5%;"><span class="icon">+</span></div></button>
+                <div class="content">
+                    <p><b>Display ads:</b> Banners, pop-ups, and graphical ads appearing on websites. <br>
+                        <b>Search engine marketing (SEM):</b> Ads displayed on search engine results pages based on keywords. <br>
+                        <b>Social media ads:</b> Sponsored posts on platforms like Facebook, Instagram, and Twitter. <br>
+                        <b>Native advertising:</b> Content that blends seamlessly with the platform's design. <br>
+                         <b>Video ads: </b>Commercials played on video platforms like YouTube<br></p>
+                </div>
+            </div>
+            <br>
+
+            <div class="box1">
+                <button class="button">
+                    <div>What is a "call to action" (CTA)?</div>
+                    <div style=" margin-right: 5%;"><span class="icon">+</span></div></button>
+                <div class="content">
+                    <p>A CTA is a clear instruction within an ad that tells the viewer what to do next, like "Shop Now," "Learn More," or "Sign Up." </p>
+                </div>
+            </div>
+            <br>
+
+            <div class="box1">
+                <button class="button">
+                    <div>How do I target my online ads to the right audience?</div>
+                    <div style=" margin-right: 5%;"><span class="icon">+</span></div></button>
+                <div class="content">
+                    <p>Use demographics (age, gender, location), interests, behaviors, and custom audience lists based on your customer data to refine targeting on ad platforms. </p>
+                </div>
+            </div>
+            <br>
+
+            <div class="box1">
+                <button class="button">
+                    <div>What are keywords and how are they used in online advertising?</div>
+                    <div style=" margin-right: 5%;"><span class="icon">+</span></div></button>
+                <div class="content">
+                    <p> Keywords are words or phrases relevant to your product or service that users might search for, allowing you to display ads when those keywords are entered on search engines. </p>
+                </div>
+            </div>
+            <br>
+
+            <div class="box1">
+                <button class="button">
+                    <div>What is Google Add?</div>
+                    <div style=" margin-right: 5%;"><span class="icon">+</span></div></button>
+                <div class="content">
+                    <p> Google Ads is a platform where businesses can create text ads to appear on Google search results pages, based on keywords users search for. </p>
+                </div>
+            </div> 
+            <br>
+
+            
+        </div>
+
+    </div>
+    <script>
+        const Buttons=document.querySelectorAll('.button');  //select all faq buttons
+
+Buttons.forEach(function(button){
+   
+    button.addEventListener('click',function(){
+
+        const content=this.nextElementSibling;
+        console.log(content);
+        
+        if (content.style.display=='block'){
+            content.style.display='none';
+            this.querySelector('.icon').textContent='+';
+        }else{
+            content.style.display='block';
+            this.querySelector('.icon').textContent='-';
+        }
+    
+    });
+});
+    
+
+
+    </script>
+    
+</body>
+</html>

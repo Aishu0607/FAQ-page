@@ -1,0 +1,32 @@
+.mainbox{
+    text-align: center;
+    height: 215px;
+     background-color: white;
+    color: black;
+    width: 387px;
+    border-radius: 65%;
+    padding-top: 6%;
+    box-shadow: 0 4px 15px rgba(207, 193, 193, 0.1);
+
+}
+.clock{
+    font-size: 60px;
+    transition: all 0.5s ease;
+    letter-spacing: 2px;
+
+}
+.date{
+    margin-top: 10px;
+    font-size: 30px;
+
+}
+body{
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #282c36;
+    color: #ffffff;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+}

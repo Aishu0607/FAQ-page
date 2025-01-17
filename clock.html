@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real time digital clock</title>
+    <link rel="stylesheet" href="clock.css">
+
+</head> 
+<body>
+    <div class="mainbox">
+        <div class="clock" id="clock">Loading.......</div>
+        <div class="date" id="date"></div>
+    </div>
+
+    <script>
+
+    document.addEventListener("DOMContentLoaded", ()=>{
+            const clock=document.getElementById('clock');
+            const date=document.getElementById('date');
+
+            function updateClock(){
+                const now= new Date();
+                let hours=now. getHours();
+
+                const minutes=String(now.getMinutes()).padStart(2,'0');
+                const seconds=String(now.getSeconds()).padStart(2,'0');
+
+                const ampm=hours >=12? 'PM':'AM';
+                hours= hours%12 || 12; 
+
+                const timeString=`${hours}:${minutes}:${seconds} ${ampm}`;
+                clock.textContent=timeString;
+
+                const dateStr=now.toLocaleDateString();
+                date.textContent=dateStr;
+        }
+        setInterval(updateClock, 1000);
+          updateClock();
+        });
+    </script>
+
+
+
+</body>
+</html>

@@ -1,1 +1,2 @@
-# FAQ-page
+# FAQ-page ( responsive and interactive FAQ page)
+Technical aspects like the technology stack, system requirements, and compatibility should be briefly mentioned to set expectations. Providing links to support resources, documentation, and community forums is essential for ongoing assistance. Lastly, the FAQ should outline future plans to keep users informed about upcoming features and improvements, while also offering contact information for feedback or queries.
